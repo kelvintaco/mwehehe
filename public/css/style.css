@@ -1,0 +1,143 @@
+@keyframes changingBackground {
+    0% {
+        background-color: #FFC0CB; /* Light pink */
+    }
+    25% {
+        background-color: #FF69B4; /* Medium pink */
+    }
+    50% {
+        background-color: #FF1493; /* Deep pink */
+    }
+    75% {
+        background-color: #FF69B4; /* Medium pink */
+    }
+    100% {
+        background-color: #FFC0CB; /* Light pink */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: changingBackground 10s infinite;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+#no-button {
+    margin: 0 10px;
+    color: white;
+    background-color: red;
+    height: 40px !important;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+    p {
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+#yes-button {
+    margin: 0 10px;
+    color: white;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+    height: 40px;
+
+    p {
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+#yes-button,
+#no-button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white; /* Border in edges */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    cursor: pointer;
+    height: 40px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition effects */
+
+    p {
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+#yes-button:hover {
+    background-color: green;
+    box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.3); /* Adjust the shadow color for hover */
+}
+
+#no-button:hover {
+    background-color: red;
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.3); /* Adjust the shadow color for hover */
+}
+
+/* Make responsive for mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.message {
+    display: none;
+}
+
+.banner-gif {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+
+    img {
+        width: auto;
+        height: 250px;
+    }
+}
+
+h1, h2 {
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    text-shadow: 4px 2px 4px #800080;
+}
+
+.heart {
+    position: relative;
+    width: 20px; /* Adjust the size of the hearts as needed */
+    height: auto;
+    z-index: 1000;
+}
+
+
+/* Path: /js/script.js */
