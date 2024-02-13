@@ -126,10 +126,17 @@ body {
     }
 }
 
-h1, h2 {
+h1 {
     font-family: 'Brush Script MT', cursive;
     color: white;
     text-shadow: 4px 2px 4px #800080;
+}
+
+h2 {
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    text-shadow: 4px 2px 4px #800080;
+    font-size: xx-large;
 }
 
 .heart {
