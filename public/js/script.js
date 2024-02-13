@@ -43,7 +43,10 @@ yes_button.addEventListener('click', () => {
     // Hide buttons div
     let buttons = document.getElementsByClassName('buttons')[0];
     buttons.style.display = "none";
-    // Show message div
+    // Hide the h1 element
+    let valentineMessage = document.querySelector('h1');
+    valentineMessage.style.display = "none";
+    // Show the h2 element
     let message = document.getElementsByClassName('message')[0];
     message.style.display = "block";
 });
