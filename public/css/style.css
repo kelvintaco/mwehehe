@@ -27,8 +27,7 @@ body {
     animation: changingBackground 10s infinite;
 }
 
-.banner-gif img,
-.heart {
+.banner-gif img {
     border: 8px solid transparent; /* Initial border */
     border-image: linear-gradient(to right, #FF4500, #FF6347, #FF0000, #FF6347, #FF4500); /* Gradient border color in shades of red */
     border-image-slice: 1; /* Slice border into equal parts */
